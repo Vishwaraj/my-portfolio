@@ -12,6 +12,7 @@ import mongodb from '../images/mongodb2.png'
 import mongoose from '../images/mongoose.jpg'
 import materialui from '../images/materialui.png'
 import redux from '../images/redux.png'
+import git from '../images/git.png'
 
 
 export default function SkillsComponent() {
@@ -68,6 +69,10 @@ export default function SkillsComponent() {
         {
             photo: redux,
             name: 'Redux' 
+        },
+        {
+            photo: git,
+            name: 'Git' 
         }
     ]
 
