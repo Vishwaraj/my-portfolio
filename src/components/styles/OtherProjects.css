@@ -1,0 +1,35 @@
+
+.other-projects-container {
+    margin-top: 5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 5rem;
+}
+
+.other-projects-container > h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(149, 151, 251);
+
+}
+
+.other-projects-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card-info {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: gray;
+    line-height: 1.4rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+}

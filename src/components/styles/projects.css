@@ -1,0 +1,55 @@
+
+.projects-container {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 5rem;
+}
+
+.projects-container > h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(149, 151, 251);
+}
+
+.hypekicks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding: 0 3rem;
+}
+
+.hypekicks > img {
+    width: 30vw;
+    padding-left: 1rem;
+}
+
+.hypekicks-info {
+    width: 40vw;
+}
+
+.hypekicks-info > h3 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: rgb(161, 195, 255);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.hypekicks-info > p {
+    color: rgb(99, 99, 99);
+}
+
+.hypekicks-info > p:nth-child(4) {
+    line-height: 1.6rem;
+}
+
+.hypekicks-info > p:first-child {
+    margin-top: 0;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
