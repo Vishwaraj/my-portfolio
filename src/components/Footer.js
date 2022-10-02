@@ -1,19 +1,23 @@
-import { Grid, IconButton } from '@mui/material'
+import { Button, Grid, IconButton } from '@mui/material'
 import React from 'react'
 import './styles/Footer.css';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import GoogleIcon from '@mui/icons-material/Google';
 import PhoneIcon from '@mui/icons-material/Phone';
+import DescriptionIcon from '@mui/icons-material/Description';
 
 export default function Footer() {
 
     const linkedinUrl = 'https://www.linkedin.com/in/vishwaraj-kamble/';
     const githubUrl = 'https://github.com/Vishwaraj'
 
-    const iconStyle = {
-        // marginTop: '.1rem'
+    const resumeButton = {
+        backgroundColor: 'rgb(149, 151, 251)',
+        marginLeft: '0.9rem'
     }
+
+    const resumeurl = 'https://drive.google.com/file/d/148dY0WuQdYa3h32P-aEALPfaqMH9VOhi/view?usp=sharing'
 
 
   return (
@@ -33,10 +37,13 @@ export default function Footer() {
                    <IconButton onClick={()=>window.open(githubUrl, '_blank')} >
                     <GitHubIcon fontSize='large' />
                    </IconButton>
+                   <Button onClick={()=>window.open(resumeurl, '_blank')} style={resumeButton} variant='contained' startIcon={<DescriptionIcon fontSize='large'/>} >
+                        Resume
+                   </Button>
                    </div>
                     
                     <div className='email-info' >
-                    <GoogleIcon fontSize='large' style={iconStyle} />
+                    <GoogleIcon fontSize='large' />
                     <p>vishwarajk96@gmail.com</p>
                     </div>
 
