@@ -4,6 +4,7 @@ import './styles/OtherProjects.css';
 import pokedexImg from '../images/pokedex.png';
 import breakingBadImg from '../images/breakingBad.png';
 import newsHubImg from '../images/newsHub.png';
+import dogsDB from '../images/dogsDB.png';
 
 export default function OtherProjects() {
 
@@ -12,8 +13,8 @@ export default function OtherProjects() {
             title: 'Dogs DB',
             tech: 'React, CSS, Material UI',
             desc: 'An App which showcases multiple breeds of dogs and their details Fetches data from dogs API',
-            link: '',
-            image: ''
+            link: 'https://cerulean-starlight-efcbd9.netlify.app/',
+            image: dogsDB
         },
         {
             title: 'PokeDex',
