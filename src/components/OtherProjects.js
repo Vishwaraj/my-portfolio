@@ -1,10 +1,11 @@
-import { Button, Card, CardActions, CardContent, CardMedia, Grid } from '@mui/material'
+import { Button, Card, CardActions, CardContent, CardMedia, Grid, IconButton } from '@mui/material'
 import React from 'react'
 import './styles/OtherProjects.css';
 import pokedexImg from '../images/pokedex.png';
 import breakingBadImg from '../images/breakingBad.png';
 import newsHubImg from '../images/newsHub.png';
 import dogsDB from '../images/dogsDB.png';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export default function OtherProjects() {
 
@@ -68,12 +69,12 @@ function OtherProjectCard({app}) {
 
     const buttonStyle = {
         backgroundColor: 'rgb(149, 151, 251)',
-        marginLeft: '12rem'
+        // marginLeft: '12rem'
     }
 
     const buttonStyleMin = {
         backgroundColor: 'rgb(149, 151, 251)',
-        marginLeft: '8rem'
+        // marginLeft: '8rem'
     }
 
     return (
@@ -97,17 +98,14 @@ function OtherProjectCard({app}) {
             <div className='card-info-body' >
             <CardContent>
      
-     <p className='card-info' >{app.title}</p>
+     <p className='card-info' >{app.title}<IconButton
+     onClick={()=>window.open(app.link, '_blank')}
+     ><ArrowForwardIcon fontSize='small' /></IconButton></p>
        <p className='card-info' >{app.tech}</p>
        <p className='card-info' >{app.desc}</p>
 
 
        </CardContent>
-       <CardActions>
-       <Button onClick={()=>window.open(app.link, '_blank')} 
-       style={screen > 480 ?   buttonStyle   :buttonStyleMin} 
-       variant='contained' >View</Button> 
-       </CardActions>
             </div>
           
          

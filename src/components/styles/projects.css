@@ -89,7 +89,6 @@
         width: 80vw;
         padding-left: 2rem;
         padding-right: 2rem;
-
     }
 
     .hypekicks > img {
@@ -100,5 +99,9 @@
     .movie-db-Image {
         width: 80vw;
         height: 30vh;
+    }
+
+    .hypekicks-info > p {
+        font-size: .8rem;
     }
 }

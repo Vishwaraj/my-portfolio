@@ -60,10 +60,14 @@ function MovieDB() {
 
   const movieUrl = 'https://celadon-capybara-4cf642.netlify.app/'
 
+  const screen = window.innerWidth;
+
   return (
     <>
                 <div className='hypekicks' >
-                <div style={{paddingLeft: '1rem'}} className='hypekicks-info' >
+                <div style={screen > 480 ? {paddingLeft: '1rem'} : null} 
+                
+                className='hypekicks-info' >
                 <h3>Movie DB</h3>
                 <p><strong>Client :</strong> React, Material UI, HTML, CSS, Formik, Yup, React-Router</p>
                 <p><strong>Server :</strong> NodeJS, Express, MongoDB, Bcrypt, JWT</p>
