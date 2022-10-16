@@ -53,3 +53,52 @@
     flex-direction: column;
     gap: 3rem;
 }
+
+.movie-db-Image {
+    height: 50vh;
+     width: 35vw;
+    }
+
+
+/* responsive styles */
+
+@media only screen and (max-width: 480px) {
+    .projects-container > h3 {
+        font-size: 1.5rem;
+    }
+
+    .projects-container {
+       margin: 0;
+       padding: 0;
+       text-align: center;
+       width: 100vw;
+       
+    }
+
+    .hypekicks {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+
+    .hypekicks-info {
+        width: 80vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+    }
+
+    .hypekicks > img {
+        width: 80vw;
+        padding: 0;
+    }
+
+    .movie-db-Image {
+        width: 80vw;
+        height: 30vh;
+    }
+}

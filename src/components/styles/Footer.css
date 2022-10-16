@@ -49,3 +49,51 @@
     color: rgb(105, 105, 105);
     margin-top: 0;
 }
+
+
+/* responsive styles */
+
+@media only screen and (max-width: 480px){
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-info > h3 {
+        font-size: 1rem;
+        color: rgb(125, 144, 255);
+        margin-bottom: 0;
+      }
+
+      .footer-info {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: space-around;
+        padding: 0 10rem;
+        align-items: center;
+      }
+      
+    .footer-info > h3:nth-child(2) {
+        margin-top: 1rem;
+    }
+    
+    .footer-info > h3:nth-child(1) {
+        margin-bottom: 0;
+    }
+
+    .reachout-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .email-info > p {
+        font-size: 1.3rem;
+    }
+
+    .phone-info > p {
+        font-size: 1.3rem;
+    }
+
+}

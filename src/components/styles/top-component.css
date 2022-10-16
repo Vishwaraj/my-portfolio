@@ -34,3 +34,36 @@
     padding-right: 3rem;
     line-height: 1.9rem;
 }
+
+
+
+/* responsive styles */
+@media only screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        margin-top: 1.5rem;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .information > h1 {
+        font-size: 2.5rem;
+    }
+
+    .information > h3 {
+        font-size: 1.8rem;
+    }
+
+    .information > p {
+        font-size: .8rem;
+        line-height: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .image {
+        width: 60vw;
+        margin-top: 0.1rem;
+        margin-right: 1rem;
+    }
+}

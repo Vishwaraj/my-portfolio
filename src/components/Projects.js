@@ -7,7 +7,6 @@ import moviedb from '../images/movie-db.png';
 export default function Projects() {
 
 
-
   return (
     <>
         <Grid>
@@ -71,7 +70,7 @@ function MovieDB() {
                 <p>Movie DB is your personal movies showcase.The app allows users to create a new account and login using those credentials. Here users can add their favourite movies, also edit or delete them. The app also has a dark/light mode. There is also a built in fun game if tic tac toe. Users can also view every single movie individually and watch their trailer.</p>
                 <Button onClick={() => window.open(movieUrl, '_blank')} style={buttonStyle} variant='contained' color='secondary'>Check It Out</Button>
                 </div>
-                <img style={{height: '50vh', width: '35vw'}} src={moviedb} alt='' />
+                <img className='movie-db-Image' src={moviedb} alt='' />
                 </div>
     </>
   )

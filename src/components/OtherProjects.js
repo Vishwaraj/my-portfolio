@@ -62,33 +62,57 @@ export default function OtherProjects() {
 
 function OtherProjectCard({app}) {
 
-    const cardStyles = {
-      width: '35vw'
-    }
+    let screen = window.innerWidth;
+
+    
 
     const buttonStyle = {
         backgroundColor: 'rgb(149, 151, 251)',
         marginLeft: '12rem'
     }
 
+    const buttonStyleMin = {
+        backgroundColor: 'rgb(149, 151, 251)',
+        marginLeft: '8rem'
+    }
+
     return (
         <>
-            <Card elevation={2} style={cardStyles} >
+            <Card elevation={2} style={screen > 480 ? {width: '35vw', }  : {width:'80vw', textAlign: 'center'}} >
             
-            <CardMedia
+            <div className='card-body' >
+
+           <div  >
+           <CardMedia
              component="img"
              alt="some-img"
              height="200"
              image={app.image}
+             className='card-image'
               />
-             <CardContent>
-             <p className='card-info' >{app.title}</p>
-             <p className='card-info' >{app.tech}</p>
-             <p className='card-info' >{app.desc}</p>
-             </CardContent>
-             <CardActions>
-             <Button onClick={()=>window.open(app.link, '_blank')} style={buttonStyle} variant='contained' >View</Button> 
-             </CardActions>
+           </div>
+            
+       
+           
+            <div className='card-info-body' >
+            <CardContent>
+     
+     <p className='card-info' >{app.title}</p>
+       <p className='card-info' >{app.tech}</p>
+       <p className='card-info' >{app.desc}</p>
+
+
+       </CardContent>
+       <CardActions>
+       <Button onClick={()=>window.open(app.link, '_blank')} 
+       style={screen > 480 ?   buttonStyle   :buttonStyleMin} 
+       variant='contained' >View</Button> 
+       </CardActions>
+            </div>
+          
+         
+             </div>
+          
             
             </Card>
         </>

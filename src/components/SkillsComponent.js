@@ -43,16 +43,17 @@ export default function SkillsComponent() {
             name: 'React' 
         },
         {
-            photo: next,
-            name: 'Next.js' 
+            photo: node,
+            name: 'Node.js' 
         },
+        
         {
             photo: express,
             name: 'express.js' 
         },
         {
-            photo: node,
-            name: 'Node.js' 
+            photo: next,
+            name: 'Next.js' 
         },
                 {
             photo: mongodb,
@@ -63,17 +64,18 @@ export default function SkillsComponent() {
             name: 'Material UI' 
         },
         {
-            photo: mongoose,
-            name: 'Mongoose' 
+            photo: git,
+            name: 'Git' 
         },
         {
             photo: redux,
             name: 'Redux' 
         },
+      
         {
-            photo: git,
-            name: 'Git' 
-        }
+            photo: mongoose,
+            name: 'Mongoose' 
+        },
     ]
 
 
